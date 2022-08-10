@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Portfolio</title>
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+  <meta name="description" content="Portfolio of Liang Chu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Liang Chu">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#Home">
+                <img src="images/logo.png" alt="logo image"/>
+            </a>
+        </div>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <ul class="nav__links">
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#Employment">Employment</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact"><button>Contact</button></a></li>
+            </ul>
+
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+            <span class="anchor" id="Home"></span>
+            <div class="home__description">
+                <div>
+                    <h4 class="intro">Hello, my name is</h4>
+                    <h1 class="name">Liang Chu</h1>
+                    <h2 class="job__title"data-period="2000" data-type='[ "I am a Software Enginner", "I am a Creator", "I am a Designer", "I am a Programmer" ]'>
+                        <script class="wrap" src="script.js"></script>
+                    </h2>
+                    <p class="origin">From Queens, NY</p>
+                </div>
+            </div>
+            <div class="self__image">
+                <img class="selfie" src="images/protrait.JPEG" alt="selfie image"/>
+            </div>
+        </div>
+
+        <div class="about__me">
+            <span class="anchor" id="AboutMe"></span>
+            <h2 class="aboutMe__title">About Me</h2>
+            <p class="aboutMe__description">
+                A mature, reliable, hard-working 2nd year college student who is studying at the 
+                Rochester Institute of Technology(RIT) and pursuing a Bachelor's degree in Software
+                Engineering. In the future, I'm on the lookout for a career as either a full-time 
+                Front end, Back end, or Full stack developer.
+            </p>
+            <div class="gif">
+                <img src="images/programmer.gif" alt="gif of programmer"/>
+            </div>
+        </div>
+
+        <div class="employment">
+            <span class="anchor" id="Employment"></span>
+            <h2 class="employment__title">Employment</h2>
+            <h4 class="employment__name">Hotel assistant manager: <small class="employment__date">(September 2016 - September 2018)</small></h4>
+            <ul class="employment__description">
+                <li>Managed online room booking for one or two bedrooms</li>
+                <li>Provided assistance for the front of house with check-in's</li>
+                <li>Provided assistance for room service</li>
+            </ul>    
+        </div>
+
+        <div class="skills">
+            <span class="anchor" id="Skills"></span>
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__grid">
+                <div class="skills__box">
+                    <h4 class="language">Java</h4>
+                    <img class="language__icon" src="images/java_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">Python</h4>
+                    <img class="language__icon" src="images/python_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">C++</h4>
+                    <img class="language__icon" src="images/cplusplus_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">HTML</h4>
+                    <img class="language__icon" src="images/html_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">CSS</h4>
+                    <img class="language__icon" src="images/css_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">JavaScript</h4>
+                    <img class="language__icon" src="images/javaScript_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">C</h4>
+                    <img class="language__icon" src="images/c_icon.png" alt="java icon"/>
+                </div>
+                <div class="skills__box">
+                    <h4 class="language">Processing</h4>
+                    <img class="language__icon" src="images/processing_icon.png" alt="java icon"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <span class="anchor" id="Projects"></span>
+            <h2 class="projects__title">Projects</h2>
+            <div class="projects__grid">
+                    <div class="projects__description">
+                        <h2 class="projects__name">Project 1: <span>Amazon Clone</span></h2>
+                        <p>In this project, I made a full-stack clone of Amazon's E-commerce website.
+                            I was able to make the front-end part of the website using JavaScript and CSS
+                            as well as make the back-end part of the website using JavaScript, Stripe's SQL database
+                            and Firebase's NoSQL database. For the front-end side of the website, I made the home, 
+                            login, checkout, payment, and orders page. Futhermore, I made it to where 
+                            you can add and remove products to the shopping basket. For the back-end side the the website,
+                            I made it to where you can view and keep track of a certain user's order history using Firebase'
+                            NoSQL database. Moreover, I made the website keep track of everyone's transactions using Stripe's 
+                            SQL database. 
+                        </p>
+                    </div>
+                    
+                    <div class="projects__imgs">
+                        <div class="projects__slideShow">
+                            <div class="mySlides">
+                                <img src="images/amazon1.png" alt="first image of amazon clone project"/>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="images/amazon2.png" alt="second image of amazon clone project"/>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="images/amazon3.png" alt="third image of amazon clone project"/>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="images/amazon4.png" alt="fourth image of amazon clone project"/>
+                            </div>
+
+                            <div class="mySlides"> 
+                                <img src="images/amazon5.png" alt="fifth image of amazon clone project"/>
+                            </div>
+                        </div>
+                        <div class="projects__sliderContainer">
+                        <button class="sliders" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="sliders" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="contact">
+            <span class="anchor" id="Contact"></span>
+            <h2 class="contact__title">Contact form</h2>
+            <form action="https://formsubmit.co/030082d661c9634af0dbcf9aa1482d57" method="POST">
+                <div class="contact__tags">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                </div>
+
+                <div class="contact__tags">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="contact__tags">
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Enter Message" required></textarea>
+                </div>
+
+                <button class="contact__button" type="submit">Send</button>
+                <input type="hidden" name="_next" value="thank_you.html">
+                <input type="hidden" name="_subject" value="New submission from Web Portfolio">
+           </form>
+        </div>
+    </main>
+
+    <footer>
+            <h2 class="other__contacts">Other contacts</h2>
+            <div class="footer__container">
+                <div>
+                    <a href="https://www.facebook.com/liang.chu.9655/" target="_blank">
+                        <img class="footer__icon" src="images/facebook_icon.png" alt="facebook icon">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/chuliang686" target="_blank">
+                        <img class="footer__icon" src="images/twitter_icon.png" alt="twitter icon"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/liang-chu-5727a6223/" target="_blank">
+                        <img class="footer__icon" src="images/linkedin_icon.png" alt="linkedin icon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__container">
+                <p class="copyright">© Liang Chu</p>
+            </div>
+    </footer>
+
+</body>
+</html>
