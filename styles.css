@@ -219,7 +219,7 @@ main > .home{
 
 .language__icon:hover{
     transition: 0.9s;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 .contact{
