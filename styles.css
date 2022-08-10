@@ -250,6 +250,7 @@ input{
 }
 
 textarea{
+    color: black;
     font-size: 13px;
     padding: 10px 10px;
     height: 200px;
