@@ -283,12 +283,21 @@ textarea{
     margin: 0;
 }
 
-.projects__slideShow > .mySlides{
+.projects__slideShow > .mySlides1{
     width: 20%;
     float: left;
 }
 
-.mySlides > img{
+.projects__slideShow > .mySlides2{
+    width: 20%;
+    float: left;
+}
+
+.mySlides1 > img{
+    width: 90%;
+}
+
+.mySlides2 > img{
     width: 90%;
 }
 

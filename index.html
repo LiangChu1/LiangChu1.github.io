@@ -62,7 +62,7 @@
                 Front end, Back end, or Full stack developer.
             </p>
             <div class="gif">
-                <img src="images/programmer.gif" alt="gif of programmer"/>
+                <img src="gifs/programmer.gif" alt="gif of programmer"/>
             </div>
         </div>
 
@@ -118,8 +118,11 @@
 
         <div class="projects">
             <span class="anchor" id="Projects"></span>
+
             <h2 class="projects__title">Projects</h2>
+
             <div class="projects__grid">
+
                     <div class="projects__description">
                         <h2 class="projects__name">Project 1: <span>Amazon Clone</span></h2>
                         <p>In this project, I made a full-stack clone of Amazon's E-commerce website.
@@ -136,29 +139,72 @@
                     
                     <div class="projects__imgs">
                         <div class="projects__slideShow">
-                            <div class="mySlides">
+                            <div class="mySlides1">
                                 <img src="images/amazon1.png" alt="first image of amazon clone project"/>
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides1">
                                 <img src="images/amazon2.png" alt="second image of amazon clone project"/>
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides1">
                                 <img src="images/amazon3.png" alt="third image of amazon clone project"/>
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides1">
                                 <img src="images/amazon4.png" alt="fourth image of amazon clone project"/>
                             </div>
 
-                            <div class="mySlides"> 
+                            <div class="mySlides1"> 
                                 <img src="images/amazon5.png" alt="fifth image of amazon clone project"/>
                             </div>
                         </div>
                         <div class="projects__sliderContainer">
-                        <button class="sliders" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="sliders" onclick="plusDivs(1)">&#10095;</button>
+                        <button class="sliders" onclick="plusSlides(-1, 0)">&#10094;</button>
+                        <button class="sliders" onclick="plusSlides(1, 0)">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <div class="projects__description">
+                        <h2 class="projects__name">Project 2: <span>Conway's Game of Life Simulation</span></h2>
+                        <p>
+                            In this project, I created a real-time graphic rendering of Robert Conway's Game of Life in Processing. 
+                            I was able to achieve this using Processing's unique drawing functionality, mouse and keyboard recognition, 
+                            and specified algorithms that Conway used to create the game. In addition, I added some features to the program 
+                            to make it more user friendly. For example, I included a way that will show the user a random simulation of the game. 
+                            I also created a way to insert certain patterns, that are synonymous with the game due to how they act, 
+                            to display on the board. Including the feature to insert certain patterns, I added another feature in which the user 
+                            can rotate them before placing them on the grid. Furthermore, I implemented a way that would show the next frame/generation 
+                            of the pattern when a certain key being pressed/held down. Lastly, I incorporated the features that would then pause, 
+                            unpause, and clear the board.
+                        </p>
+                    </div>
+                    
+                    <div class="projects__imgs">
+                        <div class="projects__slideShow">
+                            <div class="mySlides2">
+                                <img src="gifs/GOL1.gif" alt="gif of Conway's Game of Life Simulation"/>
+                            </div>
+
+                            <div class="mySlides2">
+                                <img src="gifs/GOL2.gif" alt="video of inserting certain patterns on the grid"/>
+                            </div>
+
+                            <div class="mySlides2">
+                                <img src="gifs/GOL3.gif" alt="video of rotating patternsbefore placing them on the grid"/>
+                            </div>
+
+                            <div class="mySlides2">
+                                <img src="gifs/GOL4.gif" alt="video of showing the next frame of the pattern when a certain key is pressed/held down"/>
+                            </div>
+
+                            <div class="mySlides2"> 
+                                <img src="gifs/GOL5.gif" alt="video of pausing/unpausing the simulation"/>
+                            </div>
+                        </div>
+                        <div class="projects__sliderContainer">
+                        <button class="sliders" onclick="plusSlides(-1, 1)">&#10094;</button>
+                        <button class="sliders" onclick="plusSlides(1, 1)">&#10095;</button>
                         </div>
                     </div>
 
