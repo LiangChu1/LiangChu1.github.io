@@ -368,7 +368,7 @@ footer{
 		z-index: 10;
 		left: 0;
 		right: 0;
-		top: 15%;
+		top: 17%;
 		bottom: 100%;
 		width: auto;
 		height: auto;
@@ -416,7 +416,11 @@ footer{
 
 @media screen and (max-width:750px){
     .logo a img{
-        width: 75%;
+        width: 80%;
+    }
+
+    main{
+        padding-top: 15%
     }
 
     .intro{
@@ -436,7 +440,7 @@ footer{
     }
 
     header{
-        height: 15%;
+        height: 17%;
     }
 
     .gif > img{
