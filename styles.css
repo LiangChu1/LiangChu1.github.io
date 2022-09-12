@@ -178,19 +178,30 @@ main > .home{
     height: 400px;
 }
 
-.employment__name, .language, .projects__name{
+.employment__name, .language, .projects__name, .company__name{
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.employment__date{
-    font-size: 20px;
+.employment__subtitle{
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 40% 35%;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5%;
+    column-gap: 30%;
+}
+
+.employment__date, .location{
+    font-size: 18px;
     font-style: italic;
+    margin-bottom: 10px;
 }
 
 .employment__description{
     font-size: 20px;
     margin: 20px 0px 20px;
+    max-width: 90%;
 }
 
 .employment__description > li{
@@ -293,11 +304,19 @@ textarea{
     float: left;
 }
 
+.projects__slideShow > .mySlides3{
+    width: 20%;
+    float: left;
+}
+
 .mySlides1 > img{
     width: 90%;
 }
 
 .mySlides2 > img{
+    width: 90%;
+}
+.mySlides3 > img{
     width: 90%;
 }
 
@@ -405,7 +424,14 @@ footer{
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
-    
+    .employment__subtitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
     .skills__grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -460,11 +486,11 @@ footer{
         font-size: 15px;
     }
 
-    .employment__name, .language, .projects__name{
+    .employment__name, .language, .projects__name, .company__name{
         font-size: 20px;
     }
     
-    .employment__date{
+    .employment__date, .location{
         font-size: 17px;
     }
     

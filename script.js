@@ -58,10 +58,11 @@ window.onload = function() {
 
 
 //project sliders
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(slideIndex[0], 0);
+showSlides(slideIndex[1], 1);
+showSlides(slideIndex[2], 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
