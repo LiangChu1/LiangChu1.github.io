@@ -102,7 +102,7 @@ main{
     padding-top: 10%;
     width: 100%;
     overflow-x: hidden;
-    background-image: linear-gradient(to right, rgb(0,0,0,1), rgb(0,0,0,0.3));
+    background-image: linear-gradient(to right, rgb(0,0,0,1), rgb(0,0,0,0.4));
 }
 
 main > .home{
@@ -142,6 +142,14 @@ main > .home{
 .selfie{
     width: 97%;
     float: center;
+}
+
+.resume__button{
+    background-color: blue;
+}
+
+.resume__button:hover{
+    background-color: rgb(0, 0, 255, .5);
 }
 
 .about__me, .employment, .skills, .contact, .projects{
@@ -210,27 +218,68 @@ main > .home{
 
 
 .skills__grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    grid-template-rows: auto auto;
 }
 
 .skills__box{
-    justify-items: center;
+    width: 90%;
+    border-radius: 25px;
+    background-color: white;
 }
 
-.language__icon{
-    width: 225px;
-    height: 260px;
-    margin: 20px 0px 20px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+.skills__box > div{
+    text-align: right;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    animation: fillBars 3s 1;
 }
 
-.language__icon:hover{
-    transition: 0.9s;
-    transform: rotateY(360deg);
+@keyframes fillBars {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.java{
+    max-width: 90%;
+    background-color: orangered;
+}
+
+.python{
+    max-width: 85%;
+    background-color: darkslategray;
+}
+
+.cplusplus{
+    max-width: 50%;
+    background-color: blue;
+}
+
+.html{
+    max-width: 80%;
+    background-color: green;
+}
+.css{
+    max-width: 80%;
+    background-color: darkblue;
+}
+.js{
+    max-width: 55%;
+    background-color: yellowgreen;
+}
+.c{
+    max-width: 50%;
+    background-color: blueviolet;
+}
+.processing{
+    max-width: 40%;
+    background-color: brown;
 }
 
 .contact{
@@ -432,9 +481,6 @@ footer{
         row-gap: 10px;
     }
 
-    .skills__grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
     .selfie{
         width: 50%;
     }
@@ -489,6 +535,11 @@ footer{
     .employment__name, .language, .projects__name, .company__name{
         font-size: 20px;
     }
+
+    .language{
+        text-align: center;
+        width: 90%;
+    }
     
     .employment__date, .location{
         font-size: 17px;
@@ -506,7 +557,11 @@ footer{
         font-size: 17px;
     }
 
-    .projects__grid, .skills__grid{
+    .skills__box > div{
+        font-size: 15px;
+    }
+
+    .projects__grid{
         display: flex;
         flex-direction: column;
         row-gap: 20px;
@@ -514,9 +569,6 @@ footer{
         justify-content: center;
     }
 
-    .skills{
-        left: 0%;
-    }
 }
 
 
